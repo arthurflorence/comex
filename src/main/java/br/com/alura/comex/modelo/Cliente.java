@@ -1,12 +1,12 @@
 package br.com.alura.comex.modelo;
 
 public class Cliente {
-    private String nome;
-    private String CPF;
-    private String email;
-    private String profissao;
-    private String telefone;
-    private Endereco endereco;
+    public String nome;
+    public String cpf;
+    public String email;
+    public String profissao;
+    public String telefone;
+    public Endereco endereco;
 
     public Cliente(String nome) {
         this.nome = nome;
@@ -20,10 +20,10 @@ public class Cliente {
         this.nome = nome;
     }
     public String getCPF() {
-        return CPF;
+        return cpf;
     }
     public void setCPF(String CPF) {
-        this.CPF = CPF;
+        this.cpf = cpf;
     }
 
     public String getEmail() {
@@ -61,7 +61,7 @@ public class Cliente {
     public String toString() {
         return ">>> Dados do CLoentes <<<" + "\n" +
                 "Nome: " + nome + "\n" +
-                "CPF: " + CPF + "\n" +
+                "CPF: " + cpf + "\n" +
                 "E-mail: " + email + "\n" +
                 "Telefone: " + telefone + "\n" +
                 "Endreço: " + endereco + "\n";

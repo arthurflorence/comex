@@ -1,34 +1,21 @@
 package br.com.alura.comex.modelo;
 public class Endereco {
-    String nomeRua;
-    int complemento;
-    String cep;
-    String estado;
-    String cidade;
+     String nomeRua;
     int numero;
+    String cep;
     String bairro;
+    String cidade;
+    String estado;
+    int complemento;
 
 
-    public String getNomeRua() {
-        return nomeRua;
-    }
-    public int getComplemento() {
-        return complemento;
-    }
-    public String getCep() {
-        return cep;
-    }
-    public int getNumero() {
-        return numero;
-    }
-    public String getEstado() {
-        return estado;
-    }
-    public String getCidade() {
-        return cidade;
-    }
-    public String getBairro() {
-        return bairro;
+    public Endereco(String nomeRua, int numero, String cep, String bairro, String cidade, String estado,int complemento){
+        this.nomeRua=nomeRua;
+        this.numero=numero;
+        this.bairro=bairro;
+        this.cidade=cidade;
+        this.estado=estado;
+        this.complemento=complemento;
     }
     @Override
     public String toString() {
